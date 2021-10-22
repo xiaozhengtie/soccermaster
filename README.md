@@ -1,5 +1,8 @@
 # SoccerMaster
 ## Description
+This simple java program reads a listing of game
+results for a soccer league as a file and returns the top teams at
+the end of each matchday.
 
 ## Prerequisites
 Java JDK version 8 or higher. To check, run
@@ -42,4 +45,9 @@ For example
 java com.xztie.soccermaster.SoccerMaster ../../test/resources/sample-input1.txt
 ```
 It will print top 3 teams' points for each matchday. 
-## Test
+## Test and Validation
+The code provides these validations:
+* It expects exactly one argument as input parameter, i.e., 0 or more than 1 inputs are invalid inputs. 
+* It validates the game results in input file (see `SoccerMasterTest.java` and sample input and expected output files in src/test/resources):
+  * each line must be in the format of "team1 goals, team2 goals", see `validInputTest` function, and `sample-input1.txt` and `expected-output1.txt`
+  * 

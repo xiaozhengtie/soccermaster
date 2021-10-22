@@ -20,10 +20,10 @@ public class SoccerMaster {
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Please give input file");
+            System.out.println("Please provide input file as argument");
             return;
         } else if (args.length > 1) {
-            System.out.println("Please give one file name");
+            System.out.println("Please give only one argument");
             return;
         }
 
