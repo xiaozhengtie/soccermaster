@@ -48,6 +48,9 @@ It will print top 3 teams' points for each matchday.
 ## Test and Validation
 The code provides these validations:
 * It expects exactly one argument as input parameter, i.e., 0 or more than 1 inputs are invalid inputs. 
-* It validates the game results in input file (see `SoccerMasterTest.java` and sample input and expected output files in src/test/resources):
-  * each line must be in the format of "team1 goals, team2 goals", see `validInputTest` function, and `sample-input1.txt` and `expected-output1.txt`
-  * 
+* It validates the game results in input file (see `SoccerMasterTest.java` and files in src/test/resources):
+  * each line must be in the format of "team1 goals, team2 goals", see `invalidGameResultTest` function, `sample-input2.txt` and `expected-output2.txt`.
+  * the input file must exist, see `FileNotFoundTest` function.
+  * each matchday must have exactly same set of teams, i.e.,
+    * there shouldn't be new teams appearing on matchday > 1, see `invalidGameResultNewTeamTest` function, `sample-input3.txt` and `expected-output3.txt`.
+    * there shouldn't be result missing for some team on any matchday, see `gameResultMissingForTeamTest` function, `sample-input4.txt` and `expected-output4.txt` 
