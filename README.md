@@ -25,16 +25,21 @@ See the `SoccerMaster` class in src/main/java/, and test code and files in src/t
 * You can also open the project in your IDE and run the `main` method in the `SoccerMaster` class.
 You will have to specify an input file as the argument of main. You can use the sample-input files in
 src/test/resources/.
-(2) Command line 
 
-to compile it from raw javac/java command:
+(2) Build and run using javac/java commands in command line. 
+* To compile, once you git clone the repo, cd into soccermaster/src/main/java
 ```
 cd soccermaster/src/main/java
 javac com/xztie/soccermaster/SoccerMaster.java
 ```
-you should see SoccerMaster.class
+you should see the generated SoccerMaster.class file.
+* To run, 
 ```
-java com.xztie.soccermaster.SoccerMaster 
-
+java com.xztie.soccermaster.SoccerMaster [PATH_TO_INPUT_FILE]
 ```
+For example
+```
+java com.xztie.soccermaster.SoccerMaster ../../test/resources/sample-input1.txt
+```
+It will print top 3 teams' points for each matchday. 
 ## Test

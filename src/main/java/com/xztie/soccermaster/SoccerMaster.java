@@ -16,6 +16,7 @@ public class SoccerMaster {
     private StringBuffer topTeamOutput;
     private StringBuffer errorOutput;
     private static final Pattern GAME_RESULT_PATTERN = Pattern.compile("(.*) (\\d+), (.*) (\\d+)");
+    private static final int NUMBER_TOP_TEAMS = 3;
 
     public static void main(String[] args) {
         if (args.length == 0) {
@@ -129,10 +130,10 @@ public class SoccerMaster {
                         }
                     }
                 })
-                .limit(3)
+                .limit(NUMBER_TOP_TEAMS)
                 .collect(Collectors.toList());
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < NUMBER_TOP_TEAMS; i++) {
             String teamName = topTeams.get(i).getName();
             int points = topTeams.get(i).getPoints();
             topTeamOutput.append(
