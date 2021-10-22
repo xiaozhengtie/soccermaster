@@ -54,3 +54,4 @@ The code provides these validations:
   * each matchday must have exactly same set of teams, i.e.,
     * there shouldn't be new teams appearing on matchday > 1, see `invalidGameResultNewTeamTest` function, `sample-input3.txt` and `expected-output3.txt`.
     * there shouldn't be result missing for some team on any matchday, see `gameResultMissingForTeamTest` function, `sample-input4.txt` and `expected-output4.txt` 
+* You can find a valid input and corresponding output: `sample-input1.txt`, `expected-output1.txt` 
