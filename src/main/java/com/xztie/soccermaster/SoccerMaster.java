@@ -23,7 +23,7 @@ public class SoccerMaster {
             System.out.println("Please provide input file as argument");
             return;
         } else if (args.length > 1) {
-            System.out.println("Please give only one argument");
+            System.out.println("Please provide only one argument");
             return;
         }
 
